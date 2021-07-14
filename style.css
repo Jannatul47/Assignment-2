@@ -50,16 +50,14 @@ span{
     transition: transform 2s ease-in-out;
 }
 
-
-
-.container{
+/*--------------------------
+    Male-Players Style 
+ ----------------------*/
+ .container{
     background-color: #FFFFFF;
     width: 1050px;
     margin-top: 71px;
 }
-/*--------------------------
-    Male-Players Style 
- ----------------------*/
 .section-title{
     font-family: 'Tourney', cursive;
     text-align: center;
@@ -179,6 +177,7 @@ span{
 }
 
 /* Media Queries */
+
 /* For Mobile Devices */
 @media only screen and (max-width:688px) {
     .container{
@@ -200,10 +199,10 @@ span{
     .header-container, .male-players, .female-players{
     grid-template-columns: repeat(2, 1fr);
     }
-    .blog{
+    .header-container, .blog{
     grid-template-columns: repeat(1, 1fr);
     }
-    .male-players, .female-players, .blog{
+    .header-container, .male-players, .female-players, .blog{
         flex-direction: column;
     }
 }
