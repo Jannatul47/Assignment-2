@@ -1,0 +1,209 @@
+ /* For Connect Tourney Font 
+    font-family: 'Tourney', cursive;*/
+/* For Poppins Font
+    font-family: 'Poppins', sans-serif;
+ */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+} 
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* Header Style */
+
+.header-container{
+    display:flex;
+    margin-top: 0;
+}
+.header-info{
+   width: 40%;
+   margin-left: 5%;
+   
+}
+.header-title{
+    color: #0A0826;
+    font-weight: 700px;
+    font-size: 48px;
+}
+span{
+    color: goldenrod;
+}
+
+.header-author a{
+    text-decoration: none;
+    color: white;
+    background-color:#E02C6D;
+    Padding:20px, 24px, 20px, 24px;
+}
+.header-info img{
+    width: 500px;
+    height: 400px;
+}
+.header-info:hover .photo{
+    transform: scale(1.5) rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+
+
+
+.container{
+    background-color: #FFFFFF;
+    width: 1050px;
+    margin-top: 71px;
+}
+/*--------------------------
+    Male-Players Style 
+ ----------------------*/
+.section-title{
+    font-family: 'Tourney', cursive;
+    text-align: center;
+    color: green;
+    
+}
+.color{
+    color: red;
+    font-size: 50px;
+}
+.male-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    margin-top: 50px;
+}
+.male-players-info{
+    padding: 15px;
+    box-shadow: 10px 10px 30px gray;
+}
+.male-banner img{
+    width: 300px;
+    height: 256px;
+}  
+
+
+/*--------------------------
+    Female-Players Style 
+ ----------------------*/
+
+ .female-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    margin-top: 50px;
+}
+.female-players-info{
+    padding: 15px;
+    box-shadow: 10px 10px 30px gray;
+}
+.female-banner img{
+    width: 300px;
+    height: 256px;
+} 
+
+/*--------------------------
+    Blog Style 
+ ----------------------*/
+
+.blog{
+    display:flex;
+    margin-top: 195px;
+}
+.blog-info{
+   width: 40%;
+   margin-left: 5%;
+   
+}
+.blog-title{
+    color: #0A0826;
+    font-weight: 700px;
+    font-size: 48px;
+
+}
+.blog-paragraph{
+    color: #6C6C6C;
+    font-weight: 400px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.blog-author a{
+    text-decoration: none;
+    color: white;
+    background-color:#E02C6D;
+    margin-top: 265px;
+    Padding:20px, 24px, 20px, 24px;
+}
+.blog-info img{
+    width: 500px;
+    height: 400px;
+}
+
+/* Footer Style */
+.footer{
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-top{
+    width: 483px;
+    height: 213px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-image img{
+    width: 200px;
+    height: 110px;
+}
+.footer-title{
+    font-family: 'Tourney', cursive;
+    color: #f38d08b2;
+    font-size: 50px;
+    margin-left:30px;
+}
+
+.icons{
+    display: flex;
+}
+.icon{
+    margin: 10px;
+    color: grey;
+}
+
+/* Media Queries */
+/* For Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .header-container, .male-players, .female-players, .blog{
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .header-container, .male-players, .female-players, .blog{
+        flex-direction: column;
+    }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .header-container, .male-players, .female-players{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .blog{
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .male-players, .female-players, .blog{
+        flex-direction: column;
+    }
+}
